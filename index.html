@@ -15,14 +15,14 @@
         <nav class="navbar sticky-top navbar-expand-md bg-header texto-header navbar-dark" style="height: 10em;">
              
             <div class="container-fluid ">
-                <img style="height: 8em" src="img/logo branca.png" class="img-fluid" alt="logo-branca">
-              <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation" data-bs-theme="dark">
-                <span class="navbar-toggler-icon"></span>
+                <img style="height: 8em" src="img/logo preta.png" class="img-fluid" alt="logo-branca">
+              <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation" data-bs-theme="dark" style="border: 0.2em solid rgb(150, 72, 23); background-color: transparent; opacity: 80%;">
+                <span class="navbar-toggler-icon" style="background-color: rgb(150, 72, 23); opacity: 80%;"></span>
               </button>
               <div class="collapse navbar-collapse  " id="navbarSupportedContent">
-                <ul class="navbar-nav m-auto mb-2 mb-lg-0 bg-header" style="color: white;">
+                <ul class="navbar-nav m-auto mb-2 mb-lg-0" style="color: black;">
                     <li class="nav-item dropdown">
-                        <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                        <a class="nav-link dropdown-toggle text-dark" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
                           Áreas de Atuação
                         </a>
                         <ul class="dropdown-menu">
@@ -37,13 +37,13 @@
                         </ul>
                       </li>
                   <li class="nav-item">
-                    <a class="nav-link" href="#u-estrutura">Estrutura do Escritório</a>
+                    <a class="nav-link text-dark" href="#u-estrutura">Estrutura do Escritório</a>
                   </li>
                   <li class="nav-item">
-                    <a class="nav-link" aria-current="page" href="#u-quem-sou">Quem sou</a>
+                    <a class="nav-link text-dark" aria-current="page" href="#u-quem-sou">Quem sou</a>
                   </li>
                   <li class="nav-item">
-                    <a class="nav-link" href="#u-contato">Contato</a>
+                    <a class="nav-link text-dark" href="#u-contato">Contato</a>
                   </li>
                 </ul>
               </div>
@@ -54,6 +54,11 @@
     <main id="u-planejamento">
       <div class="bg-main">
         <div class="sessoes texto">
+          <div class="imagens-hd">
+            <img class="img-header" src="img/rafael2.jpg" alt="img1">
+            <img class="img-header" src="img/rafael1.jpg" alt="img2">            
+          </div>
+
           <div class="areas">
 
             <div id="planejamento" class="sessao">
@@ -122,7 +127,7 @@
               </div>
 
               <div class="bl bl3">
-                <h5>Dr. Rafael Nunes Leite</h5>
+                <h4>Dr. Rafael Nunes Leite</h4>
                 <h6>OAB/DF 53.887</h6> 
                 <h6>OAB/GO 70.047</h6>
               </div>
@@ -140,16 +145,18 @@
                 <h3>ENTRE EM CONTATO</h3>
 
                 <form class="form" action="https://formsubmit.co/almeida.analuiza04@gmail.com" method="POST">
-                  <input type="text" placeholder="Seu nome" required>
-                  <input type="email" placeholder="Melhor E-mail" required>
-                  <input type="number" placeholder="Número Whatsapp (com DDD)" required>
-                  <textarea type="text" placeholder="Qual a sua solicitação?" rows="8" required></textarea>
+                  <input type="text" name="Nome" placeholder="Seu nome" required>
+                  <input type="email" name="E-mail" placeholder="Melhor E-mail" required>
+                  <input type="number" name="Número" minlength="11" placeholder="Número Whatsapp (com DDD)" required>
+                  <textarea type="text" name="Solicitação" placeholder="Qual a sua solicitação?" rows="8" required></textarea>
                   <input type="submit" value="Solicitar Contato">
                   <input type="hidden" name="_subject" value="Solicitação de contato - RN Advocacia">
                   <input type="hidden" name="_captcha" value="false">
                   <input type="hidden" name="_template" value="basic">   
                   <input type="hidden" name="_next" value="#">             
                 </form>
+
+                <p>* Após clicar em "Solicitar Contato", desconsidere a página de envio e retorne à página incial do site.</p>
               </div>
 
               <div class="direita">

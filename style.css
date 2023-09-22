@@ -7,19 +7,23 @@ header{
     top: 0;
     font-family: 'Prompt', sans-serif;
     font-weight: 400;
-    color: whitesmoke;
 }
 
 .bg-header{
-    background-color: rgb(150, 72, 23);
+    background-image: linear-gradient( 0deg,  rgba(241,241,241,0) -1.4%, rgba(255,255,255,1) 23.7% );
+}
+
+.navbar{
+    max-width: 100%;
+    box-sizing: border-box;
 }
 
 .nav-item{
-    margin-left: 2em;
+    margin-left: 1.2em;
 }
 
 a.nav-link{
-    color: white;
+    color: black;
     font-size: 130%;
     transition: 0.5s;
 }
@@ -30,33 +34,51 @@ a.nav-link:hover{
     padding-bottom: 0.1em
 }
 
-.navbar-toggler{
-    background-color: transparent;
+button.navbar-toggler{
     border: 0.1em solid rgb(3, 9, 23);
-    transition: 0.5s;
 }
-.navbar-toggler-icon{
-    color: whitesmoke
+span.navbar-toggler-icon{
+    color: black
+}
+
+.navbar-collapse{
+    background-color: rgb(255,255,255);
 }
 
 .dropdown-menu{
-    background-color: rgb(3, 9, 23);
+    background-color: whitesmoke;
+    border: 0.2em solid rgb(150, 72, 23);
 }
 .dropdown-item{
-    color: rgb(224, 224, 224);
+    color: black;
     font-family: 'Prompt', sans-serif;
     font-weight: 300;
 }
 
 main{
-    background-color: rgb(9, 24, 52);
+    background-image: radial-gradient( circle 883px at 49.5% 50.6%,  rgba(241,241,241,1) 28.3%, rgba(167,167,167,1) 90% );
+    background-attachment: fixed;
     padding: 8%;
     width: 100%;
-    padding-top: 14em;
+    padding-top: 12em;
+}
+.imagens-hd{
+    margin-bottom: 3em;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    gap: 0.8em;
+}
+
+.img-header{
+    box-sizing: border-box;
+    display: block;
+    width: 50%;
+    box-shadow: 0 0 0.4em rgb(38, 57, 94)
 }
 
 .texto{
-    color: rgb(224, 224, 224);
+    color: black;
 }
 
 #planejamento h5{
@@ -64,7 +86,7 @@ main{
 }
 
 .sessao{
-    margin-bottom: 7em;
+    margin-bottom: 5.5em;
 }
 
 .sessao h5{
@@ -151,12 +173,18 @@ h1{
     width: 30em;
     padding: 1em;
     background-color: rgb(3, 9, 23);
-    box-shadow: 0 0 2em rgb(38, 57, 94)
+    box-shadow: 0 0 1em rgb(38, 57, 94)
 }
 
 .landing-page h3{
     border-bottom: 0.15em solid rgb(150, 72, 23);
-    padding-bottom: 0.15em
+    padding-bottom: 0.15em;
+    color: whitesmoke;
+}
+
+.landing-page p{
+    color: rgb(223, 222, 222);
+    font-size: x-small;
 }
 
 .form{
@@ -190,7 +218,7 @@ h1{
 }
 
 .form input[type=submit]:hover{ 
-    background-color: rgb(158, 116, 89);
+    background-color: rgb(150, 72, 23);
     padding: 0.01;
 }
 
@@ -205,7 +233,7 @@ h1{
 }
 
 .maps iframe{
-    box-shadow: 0 0 2em rgb(38, 57, 94)
+    box-shadow: 0 0 1em rgb(38, 57, 94)
 }
 
 .lista{
@@ -223,7 +251,7 @@ h1{
 
 .lista a{
     outline: none;
-    color: rgb(224, 224, 224);
+    color: black;
     font-family: 'Prompt', sans-serif;
     font-weight: 400;
     font-size: large;
